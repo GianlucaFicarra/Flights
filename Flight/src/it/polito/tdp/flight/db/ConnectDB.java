@@ -8,6 +8,7 @@ import com.zaxxer.hikari.HikariDataSource;
 
 public class ConnectDB {
 
+	
 	private static final String jdbcURL = "jdbc:mysql://localhost/openflights";
 	private static HikariDataSource ds;
 	
