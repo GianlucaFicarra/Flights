@@ -2,7 +2,11 @@ package it.polito.tdp.flight.model;
 
 public class Route {
 	
-	private int routeId;
+	/*(5.2) classe dove vado a fare i riferimenti incrociati, qui non
+	 * ho invatti gli id ma gli oggetti veri e propri relativi ad aereoporto e line*/
+	
+	private int routeId;//campo aggungo non presente nel DB
+	//nella classe dao ci vado ad giungere un contatore che equivale all'id
 	private Airline airline;
 	private Airport sourceAirport;
 	private Airport destinationAirport;
@@ -77,6 +81,7 @@ public class Route {
 		this.equipment = equipment;
 	}
 
+	//rotte uguali se hanno stesso id
 	@Override
 	public int hashCode() {
 		final int prime = 31;

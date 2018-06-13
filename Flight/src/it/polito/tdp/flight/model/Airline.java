@@ -13,6 +13,8 @@ public class Airline {
 	private String callsign;
 	private String country;
 	private String active;
+	
+	//(5.3)aggiungo il riferimento alle varie rotte
 	private List<Route> routes;
 
 	public Airline(int airlineId, String name, String alias, String iata, String icao, String callsign, String country,
@@ -26,6 +28,7 @@ public class Airline {
 		this.callsign = callsign;
 		this.country = country;
 		this.active = active;
+		
 		this.routes = new ArrayList<Route>();
 	}
 

@@ -16,6 +16,8 @@ public class Airport {
 	private float timezone;
 	private String dst;
 	private String tz;
+	
+	//(5.4)lista di aereoporti
 	private List<Route> routes;
 
 	public Airport(int airportId, String name, String city, String country, String iataFaa, String icao,
@@ -32,6 +34,7 @@ public class Airport {
 		this.timezone = timezone;
 		this.dst = dst;
 		this.tz = tz;
+		
 		this.routes = new ArrayList<Route>();
 	}
 
